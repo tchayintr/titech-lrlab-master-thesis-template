@@ -1,0 +1,88 @@
+% \documentclass[12pt,a4j]{jsarticle}
+\documentclass[12pt,a4paper]{article}
+\usepackage[a4paper, margin=0.8in]{geometry}
+\usepackage[ipaex]{pxchfon}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{multirow}
+\usepackage{times}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{comment}
+\usepackage{enumitem}
+\usepackage{natbib}
+\usepackage{hyperref}
+
+\begin{document}
+\pagenumbering{roman}
+
+% title
+\input{sections/0_cover.tex}
+\clearpage
+
+\input{sections/1_inner_cover.tex}
+\clearpage
+
+% abstract
+\input{sections/2_abstract.tex}
+\clearpage
+
+% acknowledgement
+\addcontentsline{toc}{section}{Acknowledgments}
+\input{sections/3_acknowledgements.tex}
+\clearpage
+
+% TOC
+\tableofcontents
+\clearpage
+
+% figures
+\addcontentsline{toc}{section}{\listfigurename}
+\listoffigures
+\cleardoublepage
+
+% figures
+\addcontentsline{toc}{section}{\tablename}
+\listoftables
+\cleardoublepage
+
+% Set numbering for TOC
+\pagenumbering{arabic}
+
+% introduction
+\input{sections/4_introduction.tex}
+\clearpage
+
+% related work
+\input{sections/5_related_work.tex}
+\clearpage
+
+% methodology
+\input{sections/6_methodology.tex}
+\clearpage
+
+% experiments
+\input{sections/7_experiments.tex}
+\clearpage
+
+% results
+\input{sections/8_results.tex}
+\clearpage
+
+% experiments
+\input{sections/9_conclusion.tex}
+\clearpage
+
+% reference
+\addcontentsline{toc}{section}{References}
+\clearpage
+
+% bib
+\bibliographystyle{plainnat}
+\bibliography{bib/anthology,bib/extra_ref}
+
+
+\end{document}
+

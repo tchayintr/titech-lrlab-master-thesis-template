@@ -1,0 +1,39 @@
+\newgeometry{left=4cm}
+\newenvironment{xlist}{%
+  \begin{list}{}{%
+    \setlength{\labelwidth}{0em}
+    \setlength{\labelsep}{0em}
+    \setlength{\leftmargin}{\labelwidth}
+    \addtolength{\leftmargin}{\labelsep}
+    \setlength{\rightmargin}{0pt}
+    \setlength{\parsep}{0ex plus 0.2ex minus 0.1ex}
+    \setlength{\itemsep}{0.1ex plus 0.2ex}
+  }
+}
+{\end{list}}
+\thispagestyle{empty}
+    \begin{center}
+        \vspace*{6cm}
+        A Master Thesis\\
+        Submitted to School of Engineering,\\
+        Department of Information and Communications Engineering,\\
+        Tokyo Institute of Technology,\\
+        in partial fulfillment of the requirements for the degree of\\
+        Master of Engineering
+
+        \vspace{1cm}
+        Firstname Lastname
+   \end{center}
+
+\vspace{1cm}
+\begin{flushleft}
+    Thesis Committee:
+    \begin{xlist}
+        \item Manabu Okumura (Supervisor)\\(Professor, Tokyo Institute of Technology)
+        \item Manabu Okumura\\(Professor, Tokyo Institute of Technology)
+        \item Manabu Okumura\\(Professor, Tokyo Institute of Technology)
+    \end{xlist}
+\end{flushleft}
+
+% do not remove
+\restoregeometry
